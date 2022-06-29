@@ -88,7 +88,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("Shallon's Endpoints ").description("APIs Documentation")
-                .termsOfServiceUrl("https://github.com/irumvanselme")
+                .termsOfServiceUrl("https://github.com/shallonkobusinge")
                 .version("1.0").build();
     }
 }
