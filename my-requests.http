@@ -1,0 +1,31 @@
+GET http://localhost:5500/api/v1/auth/profile
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI3Iiwic3ViIjoiNyIsInVzZXIiOnsiaWQiOjcsImZpcnN0TmFtZSI6IlNoYWxsb24iLCJsYXN0TmFtZSI6Ik5qb3JvZ2UiLCJ1c2VybmFtZSI6InNoYWxsb25AZ21haWwuY29tIiwiZW1haWwiOiJzaGFsbG9uQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJhJDEwJDJRWS44NnlFM0lsOWY2RXMzMlljdS4wTVVld0dWdllqQnVycnhUcFpLS0hDQUZPZmI3NzZDIiwic3RhdHVzIjoiQUNUSVZFIiwicm9sZSI6IlVTRVIifSwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlVTRVIifV0sImlhdCI6MTY1NjUzNjI3NSwiZXhwIjoxNjU2NjIwODc1fQ.uacTo2ezoMc-MsCNZiybqfzczuo-pjteDXYgnsaWywDKYFvPPMcWtgnC_IHt37lMTbV61440iH8_9CRkG2uJ4A
+
+
+
+###
+POST http://localhost:5500/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "shallon@gmail.com",
+  "firstName": "Shallon",
+  "username": "Shallon",
+  "lastName": "Njoroge",
+  "password": "12345678",
+  "status": "ACTIVE",
+  "role": "USER"
+}
+
+###
+
+POST http://localhost:5500/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "login": "shallon@gmail.com",
+  "password": "12345678"
+}
+
+###
